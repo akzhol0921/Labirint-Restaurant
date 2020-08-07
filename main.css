@@ -16,7 +16,8 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+    vertical-align: baseline;
+    font-family: 'Rubik', sans-serif;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -43,4 +44,109 @@ table {
 }
 * {
     font-family: 'Rubik', sans-serif;
+}
+#landing-page {
+    width: 100%;
+    height: 900px;
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 99;
+    color: #fff;
+}
+#landing-page .header {
+    height: 10%;
+    width: 100%;
+    display: flex;
+
+}
+.header-list {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    flex-direction: row;
+
+}
+#logo-box {
+    display: inline-block;
+}
+.header-list ul {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+.header-list .left-part, .header-list .right-part {
+    text-align: center;
+}
+.header-list ul li {
+    flex: 1;
+    font-size: 24px;
+
+}
+#landing-page .body {
+    height: 90%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+.body .left-part {
+    flex: 1;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.left-part > .content > p {
+    margin: 16px;
+    font-size: 48px;
+    font-family: MicroSoft Yahei light;
+}
+.left-part > .content div {
+    margin-left: 20%;
+    width: 100px;
+    height: 60px;
+    padding: 8px;
+    border: 4px white solid;
+}
+.left-part > .content button{
+    font-size: 24px;
+    height: 100%;
+    width: 100%;
+    background-color: #ca3e47;
+    color: white;
+    border: 2px solid black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-family: MicroSoft Yahei Light;
+}
+.left-part > .content button:hover {
+    background-color: #555555;
+    color: white;
+  }
+.body .right-part {
+    width: 50%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    flex: 1;
+}
+.right-part > .content {
+    height: 100%;
+}
+.line {
+    height: 30%;
+    width: 1px;
+    background-color: #fff;
+    margin: 32px auto;
+}
+.icons {
+    margin: 24px auto;
+    font-size: 28px;
+    font-weight: 100;
 }
